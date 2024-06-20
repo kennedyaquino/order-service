@@ -26,7 +26,7 @@ public class OrderCreatedListener {
     public void listen(Message<OrderCreatedEvent> message) {
         logger.info("Message consumed: {}", message);
 
-        orderService.save(message.getPayload()) ;
+        orderService.save(message.getPayload());
 
     }
 }
